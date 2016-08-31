@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OscarMike.WindowsServiceWithInteractiveMode", "OscarMike.WindowsServiceWithInteractiveMode\OscarMike.WindowsServiceWithInteractiveMode.csproj", "{CAB661B8-C441-41A7-B20B-21AD523AD39D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OscarMike.Common.WindowsService", "..\OscarMike.Common.WindowsService\OscarMike.Common.WindowsService.csproj", "{DBA08AE8-A619-44EA-9805-6EFD2D95778D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OscarMike.Common", "..\OscarMike.Common\OscarMike.Common.csproj", "{DBA08AE8-A619-44EA-9805-6EFD2D95778D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

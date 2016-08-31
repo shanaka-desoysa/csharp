@@ -52,9 +52,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OscarMike.Common.WindowsService\OscarMike.Common.WindowsService.csproj">
+    <ProjectReference Include="..\..\OscarMike.Common\OscarMike.Common.csproj">
       <Project>{dba08ae8-a619-44ea-9805-6efd2d95778d}</Project>
-      <Name>OscarMike.Common.WindowsService</Name>
+      <Name>OscarMike.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
