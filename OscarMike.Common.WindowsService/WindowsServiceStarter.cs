@@ -13,8 +13,7 @@ namespace OscarMike.Common.WindowsService
             {
                 if (EventLog.SourceExists(serviceName))
                 {
-                    EventLog.WriteEntry(serviceName,
-                        "Fatal Exception : " + Environment.NewLine + e.ExceptionObject, EventLogEntryType.Error);
+                    EventLog.WriteEntry(serviceName, "Fatal Exception : " + Environment.NewLine + e.ExceptionObject, EventLogEntryType.Error);
                 }
             };
 
@@ -47,6 +46,7 @@ namespace OscarMike.Common.WindowsService
             }
             else
             {
+                EventLog.WriteEntry(serviceName, "Starting..." + Environment.NewLine, EventLogEntryType.Information);
                 ServiceBase.Run(new WindowsService<T> { ServiceName = serviceName });
             }
         }
