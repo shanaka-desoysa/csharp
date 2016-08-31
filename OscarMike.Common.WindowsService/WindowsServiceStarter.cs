@@ -14,8 +14,7 @@ namespace OscarMike.Common.WindowsService
                 if (EventLog.SourceExists(serviceName))
                 {
                     EventLog.WriteEntry(serviceName,
-                        "Fatal Exception : " + Environment.NewLine +
-                        e.ExceptionObject, EventLogEntryType.Error);
+                        "Fatal Exception : " + Environment.NewLine + e.ExceptionObject, EventLogEntryType.Error);
                 }
             };
 
@@ -24,13 +23,13 @@ namespace OscarMike.Common.WindowsService
                 var cmd = (Environment.GetCommandLineArgs().Skip(1).FirstOrDefault() ?? "").ToLower();
                 switch (cmd)
                 {
-                    case "i":
-                    case "install":
+                    case "-i":
+                    case "-install":
                         Console.WriteLine("Installing {0}", serviceName);
                         WindowsServiceInstaller.Install(serviceName, serviceDescription);
                         break;
-                    case "u":
-                    case "uninstall":
+                    case "-u":
+                    case "-uninstall":
                         Console.WriteLine("Uninstalling {0}", serviceName);
                         WindowsServiceInstaller.Uninstall(serviceName, serviceDescription);
                         break;
@@ -39,8 +38,7 @@ namespace OscarMike.Common.WindowsService
                         using (var service = new T())
                         {
                             service.Start();
-                            Console.WriteLine(
-                                "Running {0}, press any key to stop", serviceName);
+                            Console.WriteLine("Running {0}, press any key to stop", serviceName);
                             Console.ReadKey();
                         }
 #endif
