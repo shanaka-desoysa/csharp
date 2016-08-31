@@ -7,8 +7,8 @@
     <ProjectGuid>{C6C97DFF-A1AA-49D5-844C-5876110C284C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GenerateSelfSignedCertificate</RootNamespace>
-    <AssemblyName>GenerateSelfSignedCertificate</AssemblyName>
+    <RootNamespace>OscarMike.GenerateSelfSignedCertificate</RootNamespace>
+    <AssemblyName>OscarMike.GenerateSelfSignedCertificate</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

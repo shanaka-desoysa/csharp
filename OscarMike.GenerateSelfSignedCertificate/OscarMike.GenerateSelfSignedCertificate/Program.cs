@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OscarMike.Common.Cryptography;
 
-namespace GenerateSelfSignedCertificate
+namespace OscarMike.GenerateSelfSignedCertificate
 {
     class Program
     {
